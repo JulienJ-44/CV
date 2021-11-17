@@ -1,33 +1,111 @@
 body{
-    /* background-color: black; */
+    background-color: rgb(231, 233, 233);
+    width: 75vw;
+    margin: auto;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+header{
+    position:sticky;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top:0;
+    height: 10vh;
+    margin: auto;
+    padding-right: 0.3em;
+    background-color:rgb(10, 41, 182)    
+}
+header a{
+    margin: 0.3em;
+    width: 9em;
+    height: 3em;
+    /* padding: 0.5em; */
+    text-align: center;
+ 
+    color: white;
+    font-weight: bold;
+    background-color: rgb(143, 174, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6em;
+    
+}
+
+.main{
+    padding-bottom: 5em;
+}
+
+.main_pages{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+#cover{
+    height: 15vh;
+    display: flex;
+    margin: auto;
+}
+
+#cover h1{
+    margin: auto; 
+    text-align: center;
 }
 
 #presentation{
     width: 25vw;
     margin: auto;
-    text-align: center
+    text-align: center;
+    font-weight: bold;
 }
 
 
 #profil{
     display: flex;
-}
-#experiences{
-    display: flex;
+    background-color:white;
 }
 
 
 #profil .aside{
     width: 28vw;
-    background-color: aqua;
-    /* display: flex; */
+    background-color:rgb(143, 174, 241);
 }
 
 #profil .main{
     width: 72vw;
     min-height: 100vh;
-    background-color: greenyellow;
 }
+
+
+
+.table, .table--aside {display: table;}
+.row {display: table-row;}
+.cell,.cell--title {
+    display: table-cell;
+    padding: 0.5em 1em 0.5em 2em;
+}
+
+.cell--title{
+    font-weight:bold;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+
+#experiences{
+    display: flex;
+}
+
 
 #experiences .aside{
     width: 10vw;
@@ -43,4 +121,52 @@ body{
 
 #profil .main .block h2{
     font-weight: 700;
+    padding: 0.5em 2em 0.5em 2em;
+    margin: 1em 0 1em -1em;
+    background-color: rgb(10, 41, 182);
+    color:white;
+    width:60%;
+    border-radius: 1em;
+    font-size: 1.2em;
 }
+
+.aside{
+    padding-top: 14em;
+    color: white;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+#profil .aside .block h2{
+    text-transform: uppercase;
+    padding: 0.5em 1em 0.5em 1em;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+.table--aside {
+    font-size:smaller;
+    font-weight: 700;
+}
+
+footer{
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#copyright{
+    font-weight: 700;
+    color:rgb(90, 88, 88)
+}
+
+@media screen and (max-width: 1600px) {
+    body{
+        /* background-color: rgb(231, 233, 233); */
+        width: 100vw;
+        /* margin: auto; */
+    }
+  }
+  

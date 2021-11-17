@@ -1,0 +1,46 @@
+body{
+    /* background-color: black; */
+}
+
+#presentation{
+    width: 25vw;
+    margin: auto;
+    text-align: center
+}
+
+
+#profil{
+    display: flex;
+}
+#experiences{
+    display: flex;
+}
+
+
+#profil .aside{
+    width: 28vw;
+    background-color: aqua;
+    /* display: flex; */
+}
+
+#profil .main{
+    width: 72vw;
+    min-height: 100vh;
+    background-color: greenyellow;
+}
+
+#experiences .aside{
+    width: 10vw;
+    background-color: aqua;
+    /* display: flex; */
+}
+
+#experiences .main{
+    width: 90vw;
+    min-height: 100vh;
+    background-color: greenyellow;
+}
+
+#profil .main .block h2{
+    font-weight: 700;
+}

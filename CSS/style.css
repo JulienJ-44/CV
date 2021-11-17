@@ -24,9 +24,9 @@ header{
 }
 header a{
     margin: 0.3em;
-    width: 9em;
-    height: 3em;
-    /* padding: 0.5em; */
+    width: 7em;
+    height: 80%;
+    padding: 0.5em;
     text-align: center;
  
     color: white;
@@ -48,9 +48,16 @@ header a{
     /* justify-content: flex-end; */
     align-items: center;
     height: 100%;
-    margin: auto;
+    margin-right: 1em;
 }
-
+#presentation{
+    /* width: 50%; */
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    background-color:white;
+}
 #cover{
     height: 15vh;
     display: flex;
@@ -62,30 +69,35 @@ header a{
     text-align: center;
 }
 
-#presentation{
-    width: 25vw;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-}
+
 
 
 #profil{
     display: flex;
+   
     background-color:white;
 }
 
 
 #profil .aside{
-    width: 28vw;
+    width: 30%;
     background-color:rgb(143, 174, 241);
 }
 
 #profil .main{
-    width: 72vw;
-    min-height: 100vh;
+    width: 70%;
+    /* min-height: 100vh; */
 }
 
+#presentation .aside{
+    width: 30%;
+    background-color:rgb(143, 174, 241);
+}
+
+#presentation .main{
+    width: 70%;
+   
+}
 
 
 .table, .table--aside {display: table;}
@@ -131,11 +143,18 @@ header a{
 }
 
 .aside{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
     padding-top: 14em;
     color: white;
     font-size: 0.95em;
     font-weight: 700;
 }
+.aside div{
+    margin: auto;
+}
+
 
 #profil .aside .block h2{
     text-transform: uppercase;
@@ -162,11 +181,48 @@ footer{
     color:rgb(90, 88, 88)
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
     body{
         /* background-color: rgb(231, 233, 233); */
         width: 100vw;
         /* margin: auto; */
     }
+    #presentation{
+        width: 75%
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    body{
+        /* background-color: rgb(231, 233, 233); */
+        width: 100vw;
+        /* margin: auto; */
+    }
+    #profil{
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+    }
+    #profil .aside{
+        width: 100%;
+        background-color:rgb(143, 174, 241);
+    }
+    
+    #profil .main{
+        width: 100%;
+        /* min-height: 100vh; */
+    }
+    .aside{
+        padding-top: 3em;
+        color: white;
+        font-size: 0.95em;
+        font-weight: 700;
+        /* order:1; */
+    }
+    #presentation{
+        width: 90%
+    }
+
+
   }
   

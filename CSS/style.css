@@ -101,7 +101,7 @@ header a{
 
 
 .table, .table--aside {display: table;}
-.row {display: table-row;}
+.row, .row--long{display: table-row;}
 .cell,.cell--title {
     display: table-cell;
     padding: 0.5em 1em 0.5em 2em;
@@ -144,15 +144,16 @@ header a{
 
 .aside{
     display: flex;
-    justify-content:center;
+    justify-content:flex-start;
     flex-direction: column;
-    padding-top: 14em;
+    /* padding-top: 0.5em; */
     color: white;
     font-size: 0.95em;
     font-weight: 700;
 }
 .aside div{
-    margin: auto;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 
@@ -187,9 +188,6 @@ footer{
         width: 100vw;
         /* margin: auto; */
     }
-    #presentation{
-        width: 75%
-    }
   }
 
   @media screen and (max-width: 1300px) {
@@ -219,8 +217,23 @@ footer{
         font-weight: 700;
         /* order:1; */
     }
-    #presentation{
+    /* #presentation{
         width: 90%
+    } */
+    #presentation .aside{
+        display:none;
+        /* width: 100%; */
+        
+    }
+    #presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row--long{
+        display: flex;
+        flex-direction: column;
     }
 
 

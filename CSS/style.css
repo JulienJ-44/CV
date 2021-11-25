@@ -17,10 +17,11 @@ header{
     justify-content: flex-end;
     align-items: center;
     top:0;
-    height: 10vh;
+    height: 5em;
     margin: auto;
     padding-right: 0.3em;
-    background-color:rgb(10, 41, 182)    
+    background-color:rgb(10, 41, 182);
+    /* border-radius:0.5em 0.5em 0 0     */
 }
 header a{
     margin: 0.3em;
@@ -48,7 +49,7 @@ header a{
     /* justify-content: flex-end; */
     align-items: center;
     height: 100%;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 #presentation{
     /* width: 50%; */
@@ -69,9 +70,6 @@ header a{
     text-align: center;
 }
 
-
-
-
 #profil{
     display: flex;
    
@@ -88,6 +86,7 @@ header a{
     width: 70%;
     /* min-height: 100vh; */
 }
+
 
 #presentation .aside{
     width: 30%;
@@ -115,20 +114,20 @@ header a{
 
 
 #experiences{
+    margin: auto;
     display: flex;
+    background-color:white;
+    padding-right:1em;
 }
 
-
 #experiences .aside{
-    width: 10vw;
-    background-color: aqua;
-    /* display: flex; */
+    width: 15%;
+    background-color:rgb(143, 174, 241);
 }
 
 #experiences .main{
-    width: 90vw;
-    min-height: 100vh;
-    background-color: greenyellow;
+    width: 85%;
+    /* min-height: 100vh; */
 }
 
 #profil .main .block h2{
@@ -141,6 +140,51 @@ header a{
     border-radius: 1em;
     font-size: 1.2em;
 }
+
+#experiences .main .block h2{
+    font-weight: 700;
+    padding: 0.5em 2em 0.5em 2em;
+    margin: 1em 0 1em -1em;
+    background-color: rgb(10, 41, 182);
+    color:white;
+    width:85%;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+.xp_title{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    /* padding-top: 0.5em; */
+    color: white;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.xp_description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    margin: 1em;
+}
+
+.xp_description h3{
+    font-weight: 700;
+    color:rgb(66, 221, 226);
+    font-size: 1.25em;
+}
+.xp_description ul{
+   padding-left: 2em;
+   padding-bottom: 0.5em;
+   list-style-type:disc
+}
+.xp_description li{
+    padding-top: 0.5em;
+
+ }
+
+
 
 .aside{
     display: flex;
@@ -188,7 +232,14 @@ footer{
         width: 100vw;
         /* margin: auto; */
     }
-  }
+    #profil .aside .block{
+        width:fit-content;
+        margin: auto;
+    }
+    #profil .aside .block h2{
+        text-align: center;
+    }
+}
 
   @media screen and (max-width: 1300px) {
     body{
@@ -236,6 +287,13 @@ footer{
         flex-direction: column;
     }
 
+    .main_pages{
+        margin:auto;
+    }
 
+    header{
+        justify-content: center;
+    }
+ 
   }
   

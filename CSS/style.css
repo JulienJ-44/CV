@@ -175,7 +175,7 @@ footer{
 }
 
 @media screen and (max-width: 1800px) {
-    body{
+    body, header, main{
         /* background-color: rgb(231, 233, 233); */
         width: 100vw;
         /* margin: auto; */
@@ -241,6 +241,9 @@ footer{
 
     header{
         justify-content: center;
+    }
+    #profil .main .block h2{
+        width: 80%
     }
  
   }

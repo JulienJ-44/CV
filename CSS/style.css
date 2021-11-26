@@ -40,6 +40,11 @@ header a{
     
 }
 
+header a:hover{
+    background-color: rgb(116, 196, 228);
+    color: rgb(25, 96, 189);
+}
+
 .main{
     padding-bottom: 5em;
 }
@@ -113,22 +118,7 @@ header a{
 }
 
 
-#experiences{
-    margin: auto;
-    display: flex;
-    background-color:white;
-    padding-right:1em;
-}
 
-#experiences .aside{
-    width: 15%;
-    background-color:rgb(143, 174, 241);
-}
-
-#experiences .main{
-    width: 85%;
-    /* min-height: 100vh; */
-}
 
 #profil .main .block h2{
     font-weight: 700;
@@ -141,48 +131,6 @@ header a{
     font-size: 1.2em;
 }
 
-#experiences .main .block h2{
-    font-weight: 700;
-    padding: 0.5em 2em 0.5em 2em;
-    margin: 1em 0 1em -1em;
-    background-color: rgb(10, 41, 182);
-    color:white;
-    width:85%;
-    border-radius: 1em;
-    font-size: 1.2em;
-}
-
-.xp_title{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    /* padding-top: 0.5em; */
-    color: white;
-    font-size: 0.95em;
-    font-weight: 700;
-}
-
-.xp_description{
-    display: flex;
-    flex-direction: column;
-    padding-left: 3em;
-    margin: 1em;
-}
-
-.xp_description h3{
-    font-weight: 700;
-    color:rgb(66, 221, 226);
-    font-size: 1.25em;
-}
-.xp_description ul{
-   padding-left: 2em;
-   padding-bottom: 0.5em;
-   list-style-type:disc
-}
-.xp_description li{
-    padding-top: 0.5em;
-
- }
 
 
 
